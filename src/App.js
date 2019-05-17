@@ -12,8 +12,8 @@ import ServiceProviders from './components/ServiceProviders'
 
 const client = new ApolloClient({
   uri: "http://127.0.0.1:8000/graphql/",
-  onError: ({networkError, GraphQLError}) => {
-    console.log('GraphQLError',GraphQLError);
+  onError: ({networkError, GraphQLErrors}) => {
+    console.log('GraphQLError',GraphQLErrors);
     console.log('networkError',networkError);
   }
 });

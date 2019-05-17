@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-//import { Login } from '../components/Login';
-import Registro  from '../components/Auth/Registro';
+import Login from '../components/Auth/Login';
+import Registro from '../components/Auth/Registro';
 //import { Posts, PostDetail } from '../components/Posts';
 //import { UserDetail } from '../components/Users';
 //import isAuthenticated from '../isAuthenticated';
@@ -34,8 +34,10 @@ const PrivateRoute = ({component: Component, ...rest}) => (
 */
 export default [
     <Route exact path="/registro" component={Registro} />,
-    /*
     <Route exact path="/login" component={Login} />,
+
+    /*
+    
     <Route exact path="/logout" component={Logout} />,
     
     <Route component={NoMatch} />,
