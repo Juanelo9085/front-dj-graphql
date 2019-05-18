@@ -6,6 +6,8 @@ import Registro from '../components/Auth/Registro';
 //import { Posts, PostDetail } from '../components/Posts';
 //import { UserDetail } from '../components/Users';
 import isAuthenticated from '../isAuthenticated';
+import BuscarServiceProvider from '../components/Providers/BuscarServiceProvider'
+import Providers from '../components/Providers/Providers'
 
 
 const Logout = () => {
@@ -35,6 +37,7 @@ export default [
     <Route exact path="/registro" component={Registro} />,
     <Route exact path="/login" component={Login} />,
     <Route exact path="/logout" component={Logout} />,
+    <Route exact path="/" component={Providers} />,
     
 
     /*

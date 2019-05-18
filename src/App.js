@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import routes from './config/routes';
 // Importar componentes
 import { Navbar as NavbarComponent } from './common/Navbar';
-import ServiceProviders from './components/ServiceProviders'
+import ServiceProviders from './components/Providers/BuscarServiceProvider'
 
 
 const client = new ApolloClient({
@@ -26,7 +26,6 @@ class App extends Component {
         <Router>
           <React.Fragment>
             <NavbarComponent />
-            <ServiceProviders />
             <Switch>
               { routes }
             </Switch>

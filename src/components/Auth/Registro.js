@@ -52,7 +52,7 @@ class Registro extends Component {
 
     return (
       <Fragment>
-        <h1 className="text-center mb-5">Crear cuenta</h1>
+        <h1 className="text-center mt-5 mb-5">Crear cuenta</h1>
         <div className="row  justify-content-center">
           <Mutation
             mutation={CREAR_USUARIO}

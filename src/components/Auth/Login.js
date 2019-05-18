@@ -61,7 +61,7 @@ class Login extends Component {
       
         return ( 
             <Fragment>
-                 <h1 className="text-center mb-5">Iniciar Sesión</h1>
+                 <h1 className="text-center mt-5 mb-5">Iniciar Sesión</h1>
                 <div className="row  justify-content-center">
 
                     <Mutation 
