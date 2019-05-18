@@ -26,6 +26,7 @@ class App extends Component {
         <Router>
           <React.Fragment>
             <NavbarComponent />
+            <ServiceProviders />
             <Switch>
               { routes }
             </Switch>

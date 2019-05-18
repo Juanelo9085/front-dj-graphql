@@ -15,3 +15,11 @@ mutation createUser($username: String!, $firstName: String!, $lastName: String!,
 }
 
 `;
+
+export const AUTENTICAR_USUARIO = gql `
+mutation tokenAuth($username: String!, $password: String!) {
+	tokenAuth(username: $username, password: $password){
+    token
+  }
+}
+`

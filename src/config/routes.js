@@ -1,18 +1,18 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 
 import Login from '../components/Auth/Login';
 import Registro from '../components/Auth/Registro';
 //import { Posts, PostDetail } from '../components/Posts';
 //import { UserDetail } from '../components/Users';
-//import isAuthenticated from '../isAuthenticated';
+import isAuthenticated from '../isAuthenticated';
 
-/*
+
 const Logout = () => {
     localStorage.removeItem("appToken");
     return <Redirect to="/login" />
 }
-*/
+
 const NoMatch = () => (
     <div>
       no match
@@ -20,7 +20,6 @@ const NoMatch = () => (
   );
   
   /* Las rutas privadas se muestran solamente cuando se tiene el token */
-  /*
 const PrivateRoute = ({component: Component, ...rest}) => (
     <Route  {...rest} render={
         (props) => (
@@ -31,10 +30,12 @@ const PrivateRoute = ({component: Component, ...rest}) => (
     }>
     </Route>
 )
-*/
+
 export default [
     <Route exact path="/registro" component={Registro} />,
     <Route exact path="/login" component={Login} />,
+    <Route exact path="/logout" component={Logout} />,
+    
 
     /*
     
